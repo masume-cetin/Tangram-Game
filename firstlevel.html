@@ -1,0 +1,456 @@
+<html>
+    <head>
+        <style>
+          body{
+            font-family: "Times New Roman", Times, serif;
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/930/316/885/gradient-simple-background-colorful-abstract-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+            #purpletriangle_1{
+                width:0;
+  height:0;
+  border-bottom:80px solid purple;
+  border-left: 80px solid transparent; 
+  border-right: 80px solid transparent;
+  }
+  #greensquare{
+    height: 100px;
+  width: 100px;
+  background-color: rgb(16, 212, 16);
+  }
+  #bluetriangle{
+    width: 0px;
+	height: 0px;
+	border-top: 250px solid rgb(44, 136, 255);
+  border-left: 250px solid transparent;
+  }
+  #orangetriangle{
+    width: 0;
+	height: 0;
+	border-top: 250px solid orange;
+  border-right: 250px solid transparent;
+  }
+  #redtriangle{
+    width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid rgb(207, 22, 22);
+  }
+  #paralel{
+    width: 100px;
+	height: 100px;
+	transform: skew(-20deg);
+	background: rgb(245, 217, 34);
+  }
+#pinktriangle{
+    width: 0;
+	height: 0;
+	border-bottom: 150px solid pink;
+  border-left: 150px solid transparent;
+}
+  .canvas {
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 10px;
+      position:absolute;
+width: 650px;
+height: 600px;
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+top: 50px;
+right: 260px;
+  }
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  #dropzone_1{
+    width:0px;
+  height: 0px;;
+  border-bottom:80px solid plum;
+  border-left: 80px solid transparent; 
+  border-right: 80px solid transparent;
+
+  }
+
+  #dropzone_2 {
+      position: absolute;
+      margin-left: 60px;
+      margin-top: 0px;
+    height: 100px;
+  width: 100px;
+  background-color: rgb(124, 197, 124);
+  }
+  #dropzone_3{
+      position: relative;
+    width: 0;
+	height: 0;
+	border-top: 250px solid rgb(103, 159, 223);
+  border-left : 250px solid transparent;
+  margin-left: 60px;
+  }
+  #dropzone_4{
+    width: 0;
+	height: 0;
+	border-top: 250px solid rgb(223, 185, 116);
+  border-right: 250px solid transparent;
+  }
+  .dropzone_3 .dropzone_5{
+      position: absolute;
+      right: 50%;
+      bottom: 50%;
+    width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid rgb(209, 84, 84);
+  }
+  #dropzone_6{
+      float: right;
+    width: 100px;
+	height: 100px;
+	transform: skew(-20deg);
+	background: rgb(241, 226, 135);
+  }
+  #dropzone_7{
+      position: absolute;
+      right: 37%;
+      
+      bottom: 0%;
+    width: 0;
+	height: 0;
+	border-bottom: 150px solid rgb(236, 169, 181);
+  border-left: 150px solid transparent;
+  }
+  h1{
+    position: relative;
+    font-size: 3em;
+    font-weight: normal;
+    
+}
+
+/* title styles */
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+ 
+}
+
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+a {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px 5px 5px 10px;
+  
+  font: 22px Constantia, sans-serif;
+  color: black;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+top: 50px;
+right: 250px;
+  }
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a:before,
+a:after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  width: 32px;
+  height: 15px;
+  border-radius: 5px;
+  background: rgb(14, 250, 230);
+}
+a:before {
+  top: 9px;
+  -webkit-transform: rotate(65deg);
+  -ms-transform: rotate(65deg);
+  transform: rotate(65deg);
+}
+a:after {
+  bottom: 9px;
+  -webkit-transform: rotate(-65deg);
+  -ms-transform: rotate(-65deg);
+  transform: rotate(-65deg);
+}
+        </style>
+        <script>
+            var end=0;
+               var dragged;
+
+/* events fired on the draggable target */
+document.addEventListener("drag", function( event ) {
+
+}, false);
+
+document.addEventListener("dragstart", function( event ) {
+    // store a ref. on the dragged elem
+    dragged = event.target;
+    // make it half transparent
+    event.target.style.opacity = .5;
+}, false);
+
+document.addEventListener("dragend", function( event ) {
+    // reset the transparency
+    event.target.style.opacity = "";
+}, false);
+
+/* events fired on the drop targets */
+document.addEventListener("dragover", function( event ) {
+    // prevent default to allow drop
+    event.preventDefault();
+}, false);
+
+document.addEventListener("dragenter", function( event ) {
+    // highlight potential drop target when the draggable element enters it
+    if ( event.target.className == "canvas" ) {
+    }
+
+}, false);
+
+document.addEventListener("dragleave", function( event ) {
+    // reset background of potential drop target when the draggable element leaves it
+    if ( event.target.className == "canvas" ) {
+        event.target.style.background = "";
+    }
+
+}, false);
+
+document.addEventListener("drop", function( event ) {
+   
+    // prevent default action (open as link for some elements)
+    event.preventDefault();
+    // move dragged elem to the selected drop target
+    if ( event.target.className == "dropzone_1" ) {
+    if(dragged.className=="purpletriangle_1"){
+      end=end+1;
+      if(end==7){
+        var el = document.getElementById("a");
+        el.style.visibility="visible";
+
+      }
+        var el = document.getElementById("dropzone_1");
+          el.style.borderBottomColor="purple";
+        event.target.style.background = "";
+        dragged.parentNode.removeChild( dragged );
+        event.target.setData(dragged);
+        event.target.dataTransfer(dragged);
+    }
+}
+        if ( event.target.className == "dropzone_2" ) {
+    if(dragged.className=="greensquare"){
+      end=end+1;
+      if(end==7){
+        var el = document.getElementById("a");
+        el.style.visibility="visible";
+
+      }
+        var el = document.getElementById("dropzone_2");
+          el.style.backgroundColor= " rgb(16, 212, 16)";
+        dragged.parentNode.removeChild(dragged);
+        event.target.setData(dragged);
+        event.target.dataTransfer(dragged);
+    }
+}
+    if ( event.target.className == "dropzone_3" ) {
+    if(dragged.className=="bluetriangle"){
+      end=end+1;
+      if(end==7){
+        var el = document.getElementById("a");
+        el.style.visibility="visible";
+
+      }
+        var el = document.getElementById("dropzone_3");
+          el.style.borderTopColor= " rgb(44, 136, 255)";
+        dragged.parentNode.removeChild(dragged);
+        event.target.setData(dragged);
+        event.target.dataTransfer(dragged);
+    }
+
+}
+if ( event.target.className == "dropzone_4" ) {
+    if(dragged.className=="orangetriangle"){
+      end=end+1;
+      if(end==7){
+        var el = document.getElementById("a");
+        el.style.visibility="visible";
+
+      }
+        var el = document.getElementById("dropzone_4");
+          el.style.borderTopColor= "orange";
+        dragged.parentNode.removeChild(dragged);
+        event.target.setData(dragged);
+        event.target.dataTransfer(dragged);
+    }
+}
+    
+if ( event.target.className == "dropzone_5" ) {
+    if(dragged.className=="redtriangle"){
+      end=end+1;
+      if(end==7){
+        var el = document.getElementById("a");
+        el.style.visibility="visible";
+
+      }
+        var el = document.getElementById("dropzone_5");
+          el.style.borderBottomColor= " rgb(194, 28, 28)";
+        dragged.parentNode.removeChild(dragged);
+        event.target.setData(dragged);
+        event.target.dataTransfer(dragged);
+    }
+
+}
+if ( event.target.className == "dropzone_6" ) {
+    if(dragged.className=="paralel"){
+      end=end+1;
+      if(end==7){
+        var el = document.getElementById("a");
+        el.style.visibility="visible";
+
+      }
+        var el = document.getElementById("dropzone_6");
+          el.style.backgroundColor= " yellow";
+        dragged.parentNode.removeChild(dragged);
+        event.target.setData(dragged);
+        event.target.dataTransfer(dragged);
+    }
+
+}
+  
+if ( event.target.className == "dropzone_7" ) {
+    if(dragged.className=="pinktriangle"){
+      end=end+1;
+      if(end==7){
+        var el = document.getElementById("a");
+        el.style.visibility="visible";
+
+      }
+        var el = document.getElementById("dropzone_7");
+          el.style.borderBottomColor= " rgb(255, 142, 161)";
+        dragged.parentNode.removeChild(dragged);
+        event.target.setData(dragged);
+        event.target.dataTransfer(dragged);
+    }
+
+}
+}, false);
+        </script>
+    </head>
+<body>
+  <a id="a" style="visibility: hidden; position: absolute; right: 5%; top: 45%;" href="secondlevel.html">Next Level</a>
+    <div  style=" margin-top: 50px; width: 600px; height:600px; outline-style: solid;
+    outline-color: black;
+    outline-width: 10px;">
+      <h1 class="home-title">
+        <span>drag the shapes from here</span>
+      </h1>
+        <div class="purpletriangle_1"  id="purpletriangle_1" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+    </div>
+ 
+    <div style=" bottom: 35%; left: 10%; position: absolute;" class="greensquare" id="greensquare" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+  <div  style="left: 15%; position: absolute;"   class="bluetriangle" id="bluetriangle" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+  <div  style="left: 5%; position: absolute;" class="orangetriangle" id="orangetriangle" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+  <div  style="bottom: 40%; position: absolute;" class="redtriangle" id="redtriangle" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+  <div  style="left: 5%; position: absolute;" class="paralel" id="paralel" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+  <div  style="left: 15%; position: absolute;" class="pinktriangle" id="pinktriangle" draggable="true" ondragstart="event.dataTransfer.setData('text/plain,null')"></div>
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sb0abad0b84d20c80/image/i6b04e7b50500e9bc/version/1416343307/tangram-chicken.png" alt="A DUCK" style=" bottom: 12%; position: absolute; width:200px;height:200px;">
+</div>
+      
+
+    <div class="canvas">
+      <h1 class="home-title">
+        <span>Drop the shapes here</span>
+      </h1>
+        <div class="dropzone_1" id="dropzone_1"></div>
+        <div style="display: table;">
+        <div style=" display: table-cell;" class="dropzone_2" id="dropzone_2"></div>
+        <div style="margin-left: 480px; display: table-cell;" class="dropzone_6" id="dropzone_6"></div>
+    </div>
+        <div style=" display: table;" >
+            <div style=" display: table-cell;" >
+                <div class="dropzone_3" id="dropzone_3">
+                    <div class="dropzone_5" id="dropzone_5"></div>
+                </div>
+            </div>
+       <div style=" display: table-cell;">
+        <div  class="dropzone_4" id="dropzone_4">
+            <div class="dropzone_7" id="dropzone_7"></div>
+        </div>
+        
+    </div>
+    </div >
+    </div>
+    
+</body>
+
+</html>

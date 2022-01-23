@@ -1,0 +1,145 @@
+<html>
+    <head>
+<style>
+    body{
+        font-family: "fantasy", fantasy;
+        display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    }
+    .words {
+  color: #d5e9f3;
+  font-size:100px;
+  line-height: 1.5;
+}
+
+.words span {
+  font-size: 6rem;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+}
+
+</style>
+    </head>
+    <body>
+        <div class="words word-1">
+            <span>T</span>
+            <span>A</span>
+            <span>N</span>
+            <span>G</span>
+            <span>R</span>
+            <span>A</span>
+            <span>M</span>
+          </div>
+          
+          <div class="words word-2">
+            <span>I</span>
+            <span>S</span>
+          </div>
+          
+          <div class="words word-3">
+            <span>C</span>
+            <span>O</span>
+            <span>O</span>
+            <span>L</span>
+          </div>
+          <a style="
+          width: 150px;
+          height: 20px;
+          font: bold 20px Arial;
+          text-align: center;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  background-color: rgb(194, 109, 183);
+  color: #05f7ff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 5px solid #CCCCCC;
+  border-right: 5px solid #333333;
+  border-bottom: 5px solid #333333;
+  border-left: 5px solid #CCCCCC;" href="firstlevel.html">START</a>
+  <a style="
+  width: 150px;
+  height: 20px;
+  font: bold 20px Arial;
+  text-align: center;
+text-decoration: none;
+background-color: #EEEEEE;
+background-color: rgb(194, 109, 183);
+color: #05f7ff;
+padding-top: 1%;
+padding-bottom: 1%;
+border-top: 5px solid #CCCCCC;
+border-right: 5px solid #333333;
+border-bottom: 5px solid #333333;
+border-left: 5px solid #CCCCCC;" href="help.html">HELP</a>
+<a style="
+width: 150px;
+height: 20px;
+font: bold 20px Arial;
+text-align: center;
+text-decoration: none;
+background-color: #EEEEEE;
+background-color: rgb(194, 109, 183);
+color: #05f7ff;
+padding-top: 1%;
+padding-bottom: 1%;
+border-top: 5px solid #CCCCCC;
+border-right: 5px solid #333333;
+border-bottom: 5px solid #333333;
+border-left: 5px solid #CCCCCC;" href="developers.html">DEVELOPERS</a>
+
+    </body>
+</html>
